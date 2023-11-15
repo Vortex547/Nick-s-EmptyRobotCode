@@ -18,5 +18,16 @@ public class Forward extends CommandBase {
             Robot.wheels.setLeftWheelMotorState(Wheels.LeftWheelMotorState.ON);
             Robot.wheels.setRightWheelMotorState(Wheels.RightWheelMotorState.ON);
         }
+        else
+        {
+            Robot.wheels.setLeftWheelMotorState(Wheels.LeftWheelMotorState.OFF);
+            Robot.wheels.setRightWheelMotorState(Wheels.RightWheelMotorState.OFF);
+        }
+    }
+
+    public void end(boolean interrupted)
+    {
+        Robot.wheels.setLeftWheelMotorState(Wheels.LeftWheelMotorState.OFF);
+        Robot.wheels.setRightWheelMotorState(Wheels.RightWheelMotorState.OFF);
     }
 }

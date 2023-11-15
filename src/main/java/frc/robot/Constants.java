@@ -18,7 +18,6 @@ public final class Constants {
 
     public static class Wheels{
 
-        public static final double WheelBackwardsSpeed = 0;
         public static int LeftWheelMotor = CANIds.LeftWheelMotor;
         public static int RightWheelMotor = CANIds.RightWheelMotor;
         

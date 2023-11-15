@@ -59,7 +59,7 @@ public class Wheels extends SubsystemBase {
                 this.LeftWheelMotor.set(0.0);
                 break;
             case REVERSED:
-                this.LeftWheelMotor.set(Constants.Wheels.WheelBackwardsSpeed);
+                this.LeftWheelMotor.set(Constants.Wheels.WheelBackwardSpeed);
                 break;
             default:
                 this.setLeftWheelMotorState(LeftWheelMotorState.OFF);
@@ -80,7 +80,7 @@ public class Wheels extends SubsystemBase {
                 this.RightWheelMotor.set(0.0);
                 break;
             case REVERSED:
-                this.RightWheelMotor.set(Constants.Wheels.WheelBackwardsSpeed);
+                this.RightWheelMotor.set(Constants.Wheels.WheelBackwardSpeed);
                 break;
             default:
                 this.setRightWheelMotorState(RightWheelMotorState.OFF);
